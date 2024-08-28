@@ -37,6 +37,20 @@ addbook.addEventListener("click", function(event){
 
 })
 
+function bars(){
+    var navbar = document.querySelector(".side-navbar")
+    navbar.style.left="0"
+
+
+}
+
+function cut(){
+    var navbar = document.querySelector(".side-navbar")
+     navbar.style.left="-60%"
+    
+
+}
+
 function deleteobject(event)
 {
     event.target.parentElement.remove()

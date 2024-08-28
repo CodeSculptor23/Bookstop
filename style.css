@@ -11,12 +11,17 @@ body{
 .navbar{
     background-color: #FD6569;
     padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .navbar ul{
     position: absolute;
     right: 5%;
     display: flex;
+    
     
 }
 .navbar ul li{
@@ -24,11 +29,39 @@ body{
     margin: 10px;
 
 }
+.side-navbar{
+    width: 50%;
+    position: fixed;
+    height: 100%;
+    background-color: #FD6569;
+    z-index: 1;
+    transition: 1.5s;
+    left: -60%;
 
+
+}
+
+
+.side-navbar ul li{
+    margin: 20px;
+    list-style: none;
+
+    
+    
+}
+.side-navbar ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#bars{
+    display: none;
+}
 
 
 .container{
     padding: 10px;
+    display: flex;
+
 
 }
 .book-container{
@@ -138,6 +171,17 @@ body{
 }
 
 
+@media screen and (max-width: 600px){
+    #bars{
+        display: block;
 
+    }
+    .navbar ul{
+        display: none;
+    }
+    .book-container{
+        width: 80%;
+    }
+}
 
 
